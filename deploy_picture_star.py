@@ -71,11 +71,11 @@ def extract_prediction(inp, net,all_keys):
 def estrellas(image_score):
     if image_score<=0:
         resultado='OMG, your image is ugly AF... 🤮'
-    elif 0<image_score and image_score<=0.25:
+    elif 0<image_score and image_score<=0.50:
         resultado='here are 2 stars for the effort: ⭐⭐'
-    elif 0.25<image_score and image_score<=0.50:
+    elif 0.50<image_score and image_score<=0.65:
         resultado='this is giving 3 stars: ⭐⭐⭐'
-    elif 0.50<image_score and image_score<=0.75:
+    elif 0.65<image_score and image_score<=0.75:
         resultado='look at u! ur almost a pro: ⭐⭐⭐⭐'
     elif 0.75<image_score:
         resultado='IT IS GI-VING INFLUECER VIBZ: ⭐⭐⭐⭐⭐'
