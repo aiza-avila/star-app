@@ -1,4 +1,5 @@
 # .\empre\Scripts\activate
+# .\star_proy\Scripts\activate
 from PIL import Image
 import pandas as pd
 import os
@@ -119,6 +120,7 @@ def main():
         # Display the results
         st.write("Results:")
         st.write(calif_final)
+        st.write(predicted_values['score']))
 
 
 # Run the app
