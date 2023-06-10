@@ -85,7 +85,7 @@ def estrellas(image_score):
 def main():
     st.title("Aesthetics App")
     # load model
-    checkpoint='C:/Users/Aiza/Documents/CRP/Aesthetic_Anto/epoch_7_loss_0_3686805795728361.pth'
+    checkpoint='epoch_7_loss_0_3686805795728361.pth'
     resnet=models.resnet50(weights="IMAGENET1K_V1")
     model = Net(resnet, n_features=12)
     model.load_state_dict(torch.load(f"{checkpoint}", map_location=lambda storage, loc: storage))
