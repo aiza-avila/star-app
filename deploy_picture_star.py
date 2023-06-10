@@ -93,7 +93,14 @@ def main():
     )
         # Title and description
     st.title("SnapSter")
-    st.markdown("An app check how aesthetic is your pic")
+    st.markdown("An app to check how aesthetic is your pic")
+    st.write("---")
+
+    st.title("Welcome to SnapSter!!")
+    st.write("Wanna know the potential of the pic you kust took? Is it gonna be engaging? How to know if my followers are going to love it before posting?")
+    st.write("Fear no more! SnapSter is here to help")
+    st.write("We'll let you know, in a scale from ⭐ to ⭐⭐⭐⭐⭐ how pretty and engaginf your picture is going to be")
+    st.write("Try it out! we don't bite....sometimes 👼")
     st.write("---")
 
     # Instructions
@@ -101,7 +108,7 @@ def main():
     st.write("1. Click Browse files")
     st.write("2. Select the pic that you want to check")
     st.write("3. Hit the *Here we go* button")
-    st.write("4. Check on a scale from 1 to 5 how ✨AESTHETIC✨ is your pic!")
+    st.write("4. Check on a scale from 1 to 5 stars (⭐) how ✨AESTHETIC✨ is your pic!")
     st.write("---")
     # load model
     checkpoint='epoch_7_loss_0_3686805795728361.pth'
