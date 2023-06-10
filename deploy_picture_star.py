@@ -84,7 +84,13 @@ def estrellas(image_score):
 # -------------------------------------------------------------------------------------
 # Streamlit web app
 def main():
-    st.title("Aesthetics App")
+    # Set page config
+    st.set_page_config(
+        page_title="SnapSter",
+        page_icon="📷",
+        layout="centered",
+        initial_sidebar_state="auto"
+    )
     # load model
     checkpoint='epoch_7_loss_0_3686805795728361.pth'
     resnet=models.resnet50(weights="IMAGENET1K_V1")
