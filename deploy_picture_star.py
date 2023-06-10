@@ -97,9 +97,9 @@ def main():
     st.write("---")
 
     st.title("Welcome to SnapSter!!")
-    st.write("Wanna know the potential of the pic you kust took? Is it gonna be engaging? How to know if my followers are going to love it before posting?")
+    st.write("Wanna know the potential of the pic you just took? Is it gonna be engaging? How to know if my followers are going to love it before posting?")
     st.write("Fear no more! SnapSter is here to help")
-    st.write("We'll let you know, in a scale from ⭐ to ⭐⭐⭐⭐⭐ how pretty and engaginf your picture is going to be")
+    st.write("We'll let you know, in a scale from ⭐ to ⭐⭐⭐⭐⭐ how pretty and engaging your picture is going to be")
     st.write("Try it out! we don't bite....sometimes 👼")
     st.write("---")
 
