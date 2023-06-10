@@ -91,6 +91,18 @@ def main():
         layout="centered",
         initial_sidebar_state="auto"
     )
+        # Title and description
+    st.title("SnapSter")
+    st.markdown("An app check how aesthetic is your pic")
+    st.write("---")
+
+    # Instructions
+    st.subheader("Instructions")
+    st.write("1. Click Browse files")
+    st.write("2. Select the pic that you want to check")
+    st.write("3. Hit the *Here we go* button")
+    st.write("4. Check on a scale from 1 to 5 how ✨AESTHETIC✨ is your pic!")
+    st.write("---")
     # load model
     checkpoint='epoch_7_loss_0_3686805795728361.pth'
     resnet=models.resnet50(weights="IMAGENET1K_V1")
@@ -110,7 +122,7 @@ def main():
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
     # Run button
-    if st.button("Run Code") and uploaded_file:
+    if st.button("Here we go") and uploaded_file:
         dataloader_ = create_dataloader(uploaded_file, is_train=False)
         for algo in dataloader_:
             print(algo)
