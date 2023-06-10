@@ -88,7 +88,8 @@ def main():
     checkpoint='epoch_7_loss_0_3686805795728361.pth'
     resnet=models.resnet50(weights="IMAGENET1K_V1")
     model = Net(resnet, n_features=12)
-    model.load_state_dict(torch.load(f"{checkpoint}", map_location=lambda storage, loc: storage))
+    model.load_state_dict(torch.load(f"{checkpoint}", map_location=torch.device('cpu')))
+#     model.load_state_dict(torch.load(f"{checkpoint}", map_location=lambda storage, loc: storage))
 
     # key creation
     attr_keys = ['BalancingElements', 'ColorHarmony', 'Content', 'DoF',
