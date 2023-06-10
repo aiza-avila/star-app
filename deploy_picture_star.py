@@ -145,7 +145,7 @@ def main():
         # Display the results
         st.write("Results:")
         st.write(calif_final)
-        st.write(predicted_values['score'])
+        # st.write(predicted_values['score'])
 
 
 # Run the app
